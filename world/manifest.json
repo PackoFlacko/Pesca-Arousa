@@ -1,0 +1,69 @@
+{
+  "name": "Ribeira–Illa de Rúa",
+  "version": 1,
+  "crs": "EPSG:25829",
+  "origin": [
+    502500,
+    4710500
+  ],
+  "worldTransform": "x=E-E0, y=visual elevation, z=-(N-N0); metres",
+  "bounds": [
+    499000.0,
+    4708000.0,
+    506000.0,
+    4713000.0
+  ],
+  "grid": {
+    "rows": 500,
+    "cols": 700,
+    "step": 10,
+    "firstX": -3495.0,
+    "firstZ": -2495.0
+  },
+  "terrain": {
+    "vertices": 98127,
+    "triangles": 194112
+  },
+  "ruaDetail": {
+    "vertices": 9926,
+    "triangles": 19203,
+    "resolution": 2,
+    "visualShoreBand": 6
+  },
+  "lighthouse": {
+    "x": 2460.334962326684,
+    "z": -261.6335969399661,
+    "height": 14,
+    "ground": 12.157751083374023,
+    "source": "Existing IHM lights-aoi.gml record 04160; architectural volume is illustrative"
+  },
+  "attribution": [
+    "IGN/CNIG MDT02 PNOA 2015 — CC BY 4.0",
+    "IGN/SCNE IGR Hidrografía version 2019 — CC BY 4.0",
+    "EMODnet Bathymetry Consortium DTM 2024 — CC BY 4.0"
+  ],
+  "limitations": [
+    "Visual derivative, not for real navigation",
+    "Only the 7 × 5 km sector is represented; distant ría shores are absent",
+    "11.595% of the source candidate cells are reconstructed, not measured",
+    "Mean water level fixed; no tide model",
+    "Coast is diagnostic cartographic MSL, not a surveyed instantaneous shoreline",
+    "Small islands use vector footprints with illustrative relief",
+    "Lighthouse position and nominal height from archived record; building shape unverified",
+    "No urban buildings, verified vegetation distribution or boat yet"
+  ],
+  "sources": [
+    {
+      "path": "data\\processed\\phase1\\scenarios\\elevation_offset_+0.tif",
+      "sha256": "21139bde3d1edeb0ab2153290017cf8a89b981e040b321c6cc42889dcf5c7237"
+    },
+    {
+      "path": "data\\processed\\phase0\\diagnostic_land_sea.geojson",
+      "sha256": "d071e6f96d617f6cff9287dd170f7e2715a3361b0f7e2fac4541c109d5470549"
+    },
+    {
+      "path": "data\\raw\\ign\\mdt02\\MDT02-ETRS89-HU29-0151-4-COB2.TIF",
+      "sha256": "34c226e3a9c04edf01d9fd0bf27ff7e910356dd5a6bd01688775c3fa8f695383"
+    }
+  ]
+}

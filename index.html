@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#183d45"><title>Arousa — Entre mar e terra</title>  <script type="module" crossorigin src="/assets/index-CcEAiTAc.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-AENFY-vk.css">
+</head>
+  <body>
+    <main id="app">
+      <canvas id="scene" aria-label="Entorno tridimensional de Ribeira e Illa de Rúa. Arrastra para mirar y utiliza W A S D para explorar." tabindex="0"></canvas>
+      <div class="vignette" aria-hidden="true"></div>
+      <header class="identity"><span class="eyebrow">UN LUGAR PARA QUEDARSE</span><h1>Arousa<span class="dot">.</span></h1><p>Entre mar e terra</p></header>
+      <nav class="toolbar" aria-label="Controles del entorno">
+        <button id="pause" aria-pressed="false" title="Pausar el movimiento del agua">Pausar mar</button>
+        <button id="sound" aria-pressed="false">Sonido apagado</button>
+        <button id="info" aria-expanded="false" aria-controls="about">Sobre este lugar <span aria-hidden="true">↗</span></button>
+      </nav>
+      <section class="location"><div class="eyebrow"><span class="live-dot"></span> RÍA DE AROUSA · GALICIA</div><h2 id="place">A carón de Rúa</h2><p id="description">Granito, luz y el movimiento del mar.</p><div class="views" role="group" aria-label="Puntos de observación"><button data-view="rua" aria-pressed="true">Illa de Rúa</button><button data-view="ribeira" aria-pressed="false">Hacia Ribeira</button><button data-view="aerial" aria-pressed="false">Vista del sector</button></div></section>
+      <aside id="about" class="panel" hidden><button id="close-info" class="close" aria-label="Cerrar información">×</button><span class="eyebrow">EL PAISAJE, POCO A POCO</span><h2>Ribeira — Rúa</h2><p>Una primera ventana de 7 × 5 km a la ría. La costa y el relieve parten de datos geográficos; los materiales y el agua son una interpretación visual.</p><p>El faro es un volumen de referencia en su posición cartográfica. Su arquitectura, el paisaje urbano y las costas exteriores al sector están pendientes de detalle.</p><p>El ambiente sonoro es una síntesis provisional, no una grabación de la ría.</p><p class="credit">Terreno: IGN/CNIG · Costa: IGN/SCNE · Profundidades: EMODnet. CC BY 4.0. Agua: adaptación parcial de Clearwater, Aurélien — MIT.</p><a href="/world/manifest.json" target="_blank" rel="noopener">Consultar procedencia y alcance ↗</a></aside>
+      <footer><span id="hint">Arrastra para mirar <i>·</i> W A S D para explorar <i>·</i> H oculta los controles</span><span id="status">Preparando el paisaje…</span></footer>
+      <div id="loading" role="status"><div class="loading-mark">A.</div><p>Acercándonos a la ría</p><span>Preparando agua y paisaje</span></div>
+      <button id="restore" hidden>Mostrar controles</button>
+      <div id="error" role="alert" hidden></div>
+    </main>
+  </body>
+</html>
